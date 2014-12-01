@@ -7,5 +7,33 @@ Version: 1.0.0
 Author: Lucas Nogueira
 License: GPL2
 */
-wp_oembed_add_provider ('http://player.sambaads.com/*', 'http://player.sambaads.com/services/oembed', false );
+function smbaads_oembed_service()
+{
+	$oembedUrls = array(
+		array(
+			'format' => '#https?://(player\.)?sambaads\.com/.*#i', 
+			'provider' => 'http://player.sambaads.com/services/oembed',
+			'regex' => true),
+	);
+	foreach ($oembedUrls as $oembed) {
+		wp_oembed_add_provider( $oembed['format'], $oembed['provider'], $oembed['regex']);
+	}
+}
+
+
+// Now tell WP about the service
+add_action( 'init','smbaads_oembed_service' );
+
+/*
+function load_iframe($atts) {
+   extract(shortcode_atts(array(
+      'width' => 400,
+      'height' => 200,
+      'url' => ''
+   ), $atts));
+	return '<iframe src="http://player.sambaads.com/'. $width . '/'. $height . '" />';
+}
+
+add_shortcode('sambaads', 'load_iframe');
+*/
 ?>
