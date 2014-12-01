@@ -1,5 +1,5 @@
 === SambaAds oEmbed ===
-Contributors: lmnogueira
+Contributors: Lucas Nogueira
 Donate link: 
 Tags: sambaads, sambaads.com, oEmbed, video
 Requires at least: 3.7
