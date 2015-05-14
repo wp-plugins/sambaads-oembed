@@ -20,7 +20,7 @@ Simply paste the sambaads.com video URL into the content area and I will oEmbed 
 
 Example:
 
-	http://player.sambaads.com/player/single_player/6044/00d24b737eb3be1f10f9af9094814c4d
+	http://player.sambaads.com/iframe/00d24b737eb3be1f10f9af9094814c4d?m=6044
 
 == Installation ==
 
@@ -49,4 +49,4 @@ There are no settings. Activating sambaads oEmbeds enables oEmbed support for sa
 * Initial release of sambaads oEmbed
 
 == Upgrade Notice ==
-* no notice
+* 1.0.1 - wordpress v4.2 compatibility update
