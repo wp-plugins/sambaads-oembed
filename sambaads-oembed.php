@@ -3,7 +3,7 @@
 Plugin Name: SambaAds oEmbed
 Plugin URI: http://app.sambaads.com/sambaads-oembed-wordpress-plugin
 Description: Adds oEmbed support for sambaads.com in WordPress posts, pages and custom post types. There are no settings. Simply, add the Screenr video URL in your content editor.
-Version: 1.0.0
+Version: 1.0.1
 Author: Lucas Nogueira
 License: GPL2
 */
@@ -23,17 +23,4 @@ function smbaads_oembed_service()
 
 // Now tell WP about the service
 add_action( 'init','smbaads_oembed_service' );
-
-/*
-function load_iframe($atts) {
-   extract(shortcode_atts(array(
-      'width' => 400,
-      'height' => 200,
-      'url' => ''
-   ), $atts));
-	return '<iframe src="http://player.sambaads.com/'. $width . '/'. $height . '" />';
-}
-
-add_shortcode('sambaads', 'load_iframe');
-*/
 ?>
