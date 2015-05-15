@@ -45,6 +45,8 @@ There are no settings. Activating sambaads oEmbeds enables oEmbed support for sa
 
 == Changelog ==
 
+= 1.0.1 =
+* wordpress v4.2 compatibility update
 = 1.0.0 =
 * Initial release of sambaads oEmbed
 
